@@ -1,3 +1,12 @@
+/**********************************************************
+this is basically a javascript version of Q1 code
+But prompt is not vanilla JS so I originally wrote
+in PY (shitty language). but anyways P'Patr said
+pure JS so I rewrote it
+
+By: Paul J.
+***********************************************************/
+
 const prompt = require("prompt-sync")();
 
 function statement() {

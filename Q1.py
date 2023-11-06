@@ -1,3 +1,5 @@
+# yup the comment is in JS version try to see
+
 def statement():
     print("\n\n\n\n\n 'Red' ○ Red set 50 THB/set \n 'Green' ○ Green set 40 THB/set \n 'Blue' ○ Blue set 30 THB/set \n 'Yellow' ○ Yellow set 50 THB/set \n 'Pink' ○ Pink set 80 THB/set \n 'Purple' ○ Purple set 90 THB/set \n 'Orange' ○ Orange set 120 THB/set \n\n Type 'done' to calcualte")
 
