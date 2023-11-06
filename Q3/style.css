@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: grey;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+footer {
+    background-color: grey;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+
+.spacer{
+    width: 20%;
+}
+
+.nav-menu-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.nav-menu-foot2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.spacer-foot{
+    width: 50%;
+}
+
+.navbar-foot{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.navbar{
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.centerD{
+    width: 5%
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: aqua;
+}
+
+@media(max-width:900px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: grey;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+    
+    .navbar-foot {
+        flex-direction: column;
+        align-items: flex-start; /* Align left */
+      }
+    .logo-foot{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    .nav-menu-foot {
+        flex-direction: column;
+        align-items: flex-start; /* Align left */
+        margin-top: 20px; /* Add margin to move everything down */
+        margin-left: 10px;
+        gap: 10px
+      }
+    
+    .nav-menu-foot2 {
+        margin-top: 5px; /* Add some space between the two menus */
+        margin-left: -30px;
+      }
+
+}
+
+.holder{
+    font-size: 100px;
+}
