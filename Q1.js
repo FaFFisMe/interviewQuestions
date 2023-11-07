@@ -4,6 +4,9 @@ But prompt is not vanilla JS so I originally wrote
 in PY (not my favoriate). but anyways P'Patr said
 pure JS so I rewrote it
 
+*** Note ****
+Please install npm prompt-sync first
+
 By: Paul J.
 ***********************************************************/
 

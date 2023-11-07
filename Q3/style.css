@@ -213,6 +213,7 @@ a{
     height: 300px;
     background-color: #f0f0f0;
 }
+
 .contentIMG1{
     height: auto;
     max-width: 100%;
@@ -223,6 +224,14 @@ a{
     font-size: 35px;
     letter-spacing: 5px;
     margin-top: 20%;
+}
+.block5 {
+    flex: 1;
+    max-width: calc(50% - 20px); /* Adjust the width as needed */
+    margin: 3%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
 }
 .block {
     flex: 1;
@@ -277,7 +286,7 @@ a{
 }
 
 .b-text{
-    text-align: justify;
+    text-align: center;
     font-family: Arial;
     font-size: 20px;
 }
