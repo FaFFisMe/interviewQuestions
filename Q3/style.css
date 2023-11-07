@@ -1,3 +1,7 @@
+/*
+This is the CSS styling regarding the html file.
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +9,19 @@
 }
 
 header {
-    background-color: grey;
+    background-color: white;
     padding: 10px 0;
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 100;
 }
 footer {
-    background-color: grey;
+    background-color: white;
     padding: 10px 0;
     position: sticky;
     bottom: 0;
+    width: 100%;
     z-index: 100;
 }
 
@@ -28,8 +34,6 @@ a{
     text-decoration: none;
     font-family: Arial;
 }
-
-
 .spacer{
     width: 20%;
 }
@@ -78,7 +82,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     flex-grow: 1;
 }
 
@@ -123,7 +127,7 @@ a{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: grey;
+        background-color: white;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -158,9 +162,140 @@ a{
         margin-top: 5px; /* Add some space between the two menus */
         margin-left: -30px;
       }
+      .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .block {
+        flex: 1;
+        max-width: calc(50% - 20px); /* Adjust the width as needed */
+        margin: 1%;
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+
+    }
+
+    .item1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: white;
+        padding: 20px;
+        
+    }
+
+    .p-text-hide{
+        display: none;
+    }
 
 }
-
 .holder{
     font-size: 100px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: white;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #f0f0f0;
+}
+.contentIMG{
+    width: 250px;
+    height: 300px;
+    background-color: #f0f0f0;
+}
+.contentIMG1{
+    height: auto;
+    max-width: 100%;
+}
+.big-title{
+    text-align: justify;
+    font-family: Arial;
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin-top: 20%;
+}
+.block {
+    flex: 1;
+    max-width: calc(50% - 20px); /* Adjust the width as needed */
+    margin: 3%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.block1 {
+    flex: 1;
+    max-width: calc(50% - 20px); /* Adjust the width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: auto; /* Center the item vertically in the viewport */
+}
+
+.item1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    
+}
+
+.title-text{
+    text-align: center;
+    font-family: Arial;
+    font-size: 35px;
+    margin: 20px;
+}
+
+.p-text{
+    text-align: justify;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 50;
+}
+
+.p-text-hide{
+    text-align: justify;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 50;
+}
+
+.b-text{
+    text-align: justify;
+    font-family: Arial;
+    font-size: 20px;
+}
+.container3{
+    background-image: url("resources/power-up-1.png");
+    background-color: #cccccc;
+}
+.bg-container{
+    object-fit: none;
+}
+
+.item3 {
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+}
+
+.indent{
+    text-indent: 50px;
 }

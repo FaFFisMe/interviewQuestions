@@ -1,7 +1,7 @@
 /**********************************************************
 this is basically a javascript version of Q1 code
 But prompt is not vanilla JS so I originally wrote
-in PY (shitty language). but anyways P'Patr said
+in PY (not my favoriate). but anyways P'Patr said
 pure JS so I rewrote it
 
 By: Paul J.
@@ -9,6 +9,10 @@ By: Paul J.
 
 const prompt = require("prompt-sync")();
 
+
+/**********************************************************
+just so that I can write all this by calling the function
+***********************************************************/
 function statement() {
     console.log("\n\n\n\n\n 'Red' ○ Red set 50 THB/set");
     console.log(" 'Green' ○ Green set 40 THB/set");
@@ -20,6 +24,10 @@ function statement() {
     console.log("\n Type 'done' to calculate");
 }
 
+/**********************************************************
+the start function to ask for membership then pass the answer
+to the order function
+***********************************************************/
 function start() {
     let hasMember = false;
     console.log("\n\n\n\n\n\n\n\n\n\n");
@@ -38,6 +46,9 @@ function start() {
     order(hasMember);
 }
 
+/**********************************************************
+here in this function to ask for what the customer wants
+***********************************************************/
 function order(hasMember) {
     let redSet = 0;
     let greenSet = 0;
@@ -51,7 +62,7 @@ function order(hasMember) {
 
     while (true) {
         let choice = prompt(":").toLowerCase();
-
+        //in this code i uses switch case instead of if else like my previous py code
         switch (choice) {
             case "red":
                 redSet++;
@@ -100,6 +111,9 @@ function order(hasMember) {
     }
 }
 
+/**********************************************************
+for all the discount calculations and return the result
+***********************************************************/
 function calculation(redSet, greenSet, blueSet, yellowSet, pinkSet, purpleSet, orangeSet, hasMember) {
     let discount = 0;
 
@@ -143,4 +157,5 @@ function calculation(redSet, greenSet, blueSet, yellowSet, pinkSet, purpleSet, o
     console.log("\nTotal price is " + total + "฿");
 }
 
+//initiate the flow
 start();
