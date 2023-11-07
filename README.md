@@ -1,4 +1,14 @@
 # sideQuest
 
 all these code are written by pokpong jitjomnongmate
-if you want to use it it's okay but it will be better if you give me credit, thanks
+
+How to run:
+
+Q1.py and Q2.py:
+python3 -filename-
+
+Q1.js and Q2.js:
+node -filename-
+
+Q3:
+open the folder and open the index.html
